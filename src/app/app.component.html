@@ -1,0 +1,20 @@
+<h1 class="hello root">{{title}}</h1>
+<p>My Designation is {{Designation}}</p>
+<p>My Salary is {{salary}}</p>
+<button (click)="Submit()">Submit</button>
+<button (click)="DesignationChange()">Change Designation</button>
+<button (click)="calculateSalary()">Calculate Salary</button>
+<html>
+    <label>OrderNo</label>
+    <input type="text" (input)="givealert()" [(ngModel)]="orderNo"/>
+    <input type="text" (input)="givealert()" [(ngModel)]="orderNo1"/>
+    <input id="myvalue" type="itext" />
+    <select (change)="givealert()" [(ngModel)]="SelectedNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    
+    <p>Sum of no 1 and 2</p>{{orderNo3}}
+    <p>Selectedvalue</p>{{SelectedNumber}}
+</html>
